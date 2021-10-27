@@ -10,6 +10,8 @@ Installation:
 The script is ready to go out of the box, but there are some
 settings you could modify if felt needed.
 Settings are described below.
+Drop the file to ~/.config/hexchat/addons or load it in
+client via Window -> Plugins and Scripts menu.
 
 Dependencies:
 -------------
@@ -144,4 +146,4 @@ def catch_hilight(word, word_eol, userdata):
 xchat.hook_print("Channel Msg Hilight", catch_hilight, userdata="MESSAGE")
 xchat.hook_print("Channel Action Hilight", catch_hilight, userdata="ACTION")
 
-print __module_name__, __module_version__, "script loaded\003"
+print(__module_name__, __module_version__, "script loaded\003")
