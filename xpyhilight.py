@@ -146,4 +146,4 @@ def catch_hilight(word, word_eol, userdata):
 xchat.hook_print("Channel Msg Hilight", catch_hilight, userdata="MESSAGE")
 xchat.hook_print("Channel Action Hilight", catch_hilight, userdata="ACTION")
 
-print __module_name__, __module_version__, "script loaded\003"
+print(__module_name__, __module_version__, "script loaded\003")
